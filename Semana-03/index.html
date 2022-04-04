@@ -6,109 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trackgenix Landing Page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <div class="container">
-            <h1>Trackgenix S.A</h1>
-        </div>
-        <img src="https://img.icons8.com/small/16/000000/facebook-new.png" alt="facebook-icon"/>
-        <img src="https://img.icons8.com/small/16/000000/instagram-new.png" alt="instagram-icon"/>
-        <img src="https://img.icons8.com/small/16/000000/twitter.png" alt="twitter-icon"/>
-        <img src="https://img.icons8.com/small/16/000000/linkedin.png" alt="linkedin-icon"/>
-        <img src="https://img.icons8.com/small/16/000000/github.png" alt="github-icon"/>
-        <nav id="side-nav">
-            <i class="large material-icons">format_align_justify</i>
-            <input type="search" name="search" id="search" placeholder="Search">
-            <ul>  
-                <li>Menu</li>
-                <li>Home</li>
-                <li>Sign Up</li>
-                <li>Log In</li>
-                <li>Contact Info</li>
-            </ul>
-        </nav>
+    <nav>
+        <input type="search" name="search" id="search" placeholder="Search">
+        <a href="#"><i class="large material-icons">format_align_justify</i></a>
+        <p>Menu</p>
+        <ul>  
+            <li><a href="www.trackgenix/home">Home</a></li>
+            <li><a href="www.trackgenix/signup">Sign Up</a></li>
+            <li><a href="www.trackgenix/login">Log In</a></li>
+            <li><a href="www.trackgenix/contactinfo">Contact Info</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Trackgenix S.A</h1>
+       <a href="#"><img src="https://img.icons8.com/small/16/000000/facebook-new.png" alt="facebook-icon"/></a>
+       <a href="#"><img src="https://img.icons8.com/small/16/000000/instagram-new.png" alt="instagram-icon"/></a>
+       <a href="#"><img src="https://img.icons8.com/small/16/000000/twitter.png" alt="twitter-icon"/></a>
+       <a href="#"><img src="https://img.icons8.com/small/16/000000/linkedin.png" alt="linkedin-icon"/></a>
+       <a href="#"><img src="https://img.icons8.com/small/16/000000/github.png" alt="github-icon"/></a>
     </header>
     <section id="trackgenix-info">
-        <h2>What is Trackgenix?</h2>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Amet libero ratione laudantium recusandae sunt, pariatur deserunt 
-        reprehenderit id quaerat, eius ipsa sint velit nostrum quo ullam,
-        necessitatibus expedita nisi.
-        </p>
-        <img src="img/first.jpg" width="350" height="250" alt="">
+        <div>
+            <h2>What is Trackgenix?</h2>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Amet libero ratione laudantium recusandae sunt, pariatur deserunt 
+            reprehenderit id quaerat, eius ipsa sint velit nostrum quo ullam,
+            necessitatibus expedita nisi.
+            </p>
+        </div>
+        <img class="photo" src="img/first.jpg" alt="laptop">
     </section>
     <section id="functionalities">
         <h2>Functionalities</h2>
-        <div id="hours-log">
-            <h3>Hours Log</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, harum!</p>
+        <div class="function" id="hours-log">
             <i class="tiny material-icons">border_color</i>
+            <h3>Hours Log</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, harum!
+            </p>
         </div>
-        <div id="resources-management">
-            <h3>Resources Management</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, recusandae.</p>
+        <div class="function" id="resources-management">
             <i class="large material-icons">desktop_mac</i>
+            <h3>Resources Management</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, recusandae.
+            </p>
         </div>
-        <div id="reports">
-            <h3>Reports</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, sunt?</p>
+        <div class="function" id="reports">
             <i class="large material-icons">description</i>
+            <h3>Reports</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, sunt?
+            </p>
         </div>
-        <div id="multiple-roles">
-            <h3>Multiple Roles</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, provident.</p>
+        <div class="function" id="multiple-roles">
             <i class="large material-icons">folder_shared</i>
+            <h3>Multiple Roles</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, provident.
+            </p>
         </div>
     </section>
     <section id="why-trackgenix">
-        <h2>Why Trackgenix?</h2>
-        <ul>
-            <li>Productivity Booster</li>
-            <li>Work Traceability</li>
-            <li>Leadership and Team management</li>
-            <li>Decision Making</li>
-        </ul>
-        <input type="button" value="More">
-        <img src="img/second.jpg" alt="people-in-an-office" width="400" height="250">
+        <div>
+            <h2>Why Trackgenix?</h2>
+            <ul>
+                <li>Productivity Booster</li>
+                <li>Work Traceability</li>
+                <li>Leadership and Team management</li>
+                <li>Decision Making</li>
+            </ul>
+            <input class="button" type="button" value="More">
+        </div>
+        <img class="photo" src="img/second.jpg" alt="people-in-an-office">
     </section>
     <section id="help">
         <h2>How can we help you?</h2>
         <form action="input">
-            <input type="text" placeholder="Name">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <select id="select-area" required>
-                <option value="">Select Area</option>
-                <option value="dog">Human Resources</option>
-                <option value="cat">System</option>
-                <option value="hamster">Commercialization</option>
-            </select>
-            <textarea id="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
-            <input type="button" value="Send Message">
-            <input type="button" value="Reset">
+            <div class="form-group">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <select id="select-area" required>
+                    <option value="">Select Area</option>
+                    <option value="dog">Human Resources</option>
+                    <option value="cat">System</option>
+                    <option value="hamster">Commercialization</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+            </div>
+            <input class="button" type="button" value="Send Message">
+            <input class="button" type="button" value="Reset">
         </form>
     </section>
     <section id="history">
-        <h2>Our History</h2>
-        <img src="img/third.jpg" alt="building" width="400" height="250">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Temporibus, inventore beatae. Vitae eligendi debitis 
-        quibusdam impedit optio hic aliquid illum.
-        </p>
+        <img class="photo" src="img/third.jpg" alt="building">
+        <div>
+            <h2>Our History</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Temporibus, inventore beatae. Vitae eligendi debitis 
+                quibusdam impedit optio hic aliquid illum.
+            </p>
+        </div>
     </section>
     <footer>
-        <div id="more-info">
-            <div id="products">
-                <h2>Products</h2>
-                <ol>
-                    <li><a href="http://www.trackgenix.com/functionalities">Functionalities</a></li>
-                    <li><a href="http://www.tracgenix.com/downloads">Downloads</a></li>
-                    <li><a href="http://www.trackgenix.com/integrations">Integrations</a></li>
-                    <li><a href="http://www.trackgenix.com/extras">Extras</a></li>
-                </ol>
-            </div>
+        <div id="products">
+            <h2>Products</h2>
+            <ol>
+                <li><a href="http://www.trackgenix.com/functionalities">Functionalities</a></li>
+                <li><a href="http://www.tracgenix.com/downloads">Downloads</a></li>
+                <li><a href="http://www.trackgenix.com/integrations">Integrations</a></li>
+                <li><a href="http://www.trackgenix.com/extras">Extras</a></li>
+            </ol>
         </div>
         <div id="company">
             <h2>Company</h2>
@@ -135,7 +156,7 @@
             <a href="http://www.linkedin.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png" alt="linkedin-icon"/></a>
             <a href="http://www.github.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="github-icon"/></a>
             <p>
-            Copyright &copy; 2022 Trackgenix. All rights reserved. 
+                Copyright &copy; 2022 Trackgenix. All rights reserved. 
             </p>
         </div>
     </footer>
