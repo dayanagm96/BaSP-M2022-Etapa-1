@@ -120,3 +120,24 @@ header h1 {
 header img {
     float: right;
 }
+
+#trackgenix-info div{
+    width: 50%;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+#trackgenix-info div p{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+#trackgenix-info img{
+    float: right;
+    position: absolute;
+    right: 150px;
+    top: 20px;
+    height: auto;
+}
