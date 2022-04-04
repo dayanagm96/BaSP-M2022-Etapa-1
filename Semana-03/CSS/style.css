@@ -48,3 +48,45 @@ li {
     color: #fff;
     border: 1px solid #fff;
 }
+
+.photo {
+    width: 100%;
+    max-width: 350px;
+}
+
+nav {
+    width: 20%;
+    box-sizing: border-box;
+    float: left;
+    clear: left;
+    padding: 10px;
+    background-color: #aaa;
+    position: relative;
+}
+
+nav p {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+nav i {
+    color: #FF5500;
+    position: absolute;
+    right: 10px;
+}
+
+nav input {
+    margin-left: 10px;
+    padding: 5px;
+    width: 80%;
+}
