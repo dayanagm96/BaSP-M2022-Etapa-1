@@ -141,3 +141,11 @@ header img {
     top: 20px;
     height: auto;
 }
+
+#functionalities .function {
+    float: left;
+    width: 50%;
+    margin-top: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+}
