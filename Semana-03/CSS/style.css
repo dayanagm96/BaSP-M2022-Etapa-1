@@ -90,3 +90,24 @@ nav input {
     padding: 5px;
     width: 80%;
 }
+
+header{
+    width: 80%;
+    float: right;
+    box-sizing: border-box;
+    border-bottom: 3px solid #FF5500;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    padding: 10px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+header img {
+    float: right;
+}
