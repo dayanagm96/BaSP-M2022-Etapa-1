@@ -60,7 +60,7 @@ section {
 
 .photo {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
 }
 
 nav {
@@ -140,6 +140,7 @@ header img {
     right: 150px;
     top: 20px;
     height: auto;
+    max-width: 350px;
 }
 
 #functionalities .function {
