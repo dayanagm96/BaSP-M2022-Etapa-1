@@ -160,3 +160,18 @@ header img {
     padding: 10px;
 }
 
+#help {
+    padding: 20px;
+    text-align: left;
+}
+
+#help .form-group {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+#help .form-group .fill, select, textarea {
+    padding: 8px;
+    width: 100%;
+}
+
