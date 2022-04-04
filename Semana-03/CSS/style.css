@@ -182,4 +182,24 @@ header img {
     padding: 10px;
 }
 
+footer {
+    clear: both;
+    border-top: 1px solid #aaa;
+} 
 
+footer div {
+    width: 33%;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+footer #copyright {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-top: 3px solid #FF5500;
+}
