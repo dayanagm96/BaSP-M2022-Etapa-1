@@ -149,3 +149,14 @@ header img {
     padding: 10px;
     box-sizing: border-box;
 }
+
+#why-trackgenix div{
+    width: 50%;
+    text-align: center;
+    float: right;
+}
+
+#why-trackgenix ul li {
+    padding: 10px;
+}
+
