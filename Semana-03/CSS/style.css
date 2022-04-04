@@ -41,6 +41,7 @@ section {
     position: relative;
     padding: 50px 15px; 
     border-top: 1px solid #aaa;
+    margin-bottom: 50px;
 }
   
 .button {
@@ -138,7 +139,7 @@ header img {
     float: right;
     position: absolute;
     right: 150px;
-    top: 20px;
+    top: 60px;
     height: auto;
     max-width: 350px;
 }
@@ -146,9 +147,30 @@ header img {
 #functionalities .function {
     float: left;
     width: 50%;
-    margin-top: 60px;
+    margin-top: 80px;
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.function i{
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.function p {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    margin-left: 10px;
+}
+
+.function h3 {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    margin-left: 10px;
 }
 
 #why-trackgenix div{
