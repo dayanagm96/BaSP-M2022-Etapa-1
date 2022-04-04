@@ -175,3 +175,11 @@ header img {
     width: 100%;
 }
 
+#history div {
+    width: 50%;
+    text-align: center;
+    float: right;
+    padding: 10px;
+}
+
+
