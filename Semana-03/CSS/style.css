@@ -141,10 +141,11 @@ header i {
 #trackgenix-info img{
     float: right;
     position: absolute;
-    right: 150px;
-    top: 60px;
+    right: 60px;
+    top: 40px;
     height: auto;
-    max-width: 350px;
+    max-width: 400px;
+    border-radius: 3%;
 }
 
 #functionalities .function {
@@ -180,10 +181,17 @@ header i {
     width: 50%;
     text-align: center;
     float: right;
+    position: relative;
 }
 
 #why-trackgenix ul li {
     padding: 10px;
+}
+
+#why-trackgenix .photo {
+    border-radius: 3%;
+    position: absolute;
+    left: 100px;
 }
 
 #help {
@@ -206,6 +214,12 @@ header i {
     text-align: center;
     float: right;
     padding: 10px;
+    margin-top: 100px;
+}
+
+#history .photo {
+    margin-top: 80px;
+    height: 250px;
 }
 
 footer {
