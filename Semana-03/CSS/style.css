@@ -7,6 +7,7 @@
 a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
   }
 
 h2 {
@@ -23,14 +24,14 @@ h3 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
   }
 
 li {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 30px;
   }
 
@@ -72,6 +73,7 @@ nav {
     padding: 10px;
     background-color: #aaa;
     position: relative;
+    height: 2170px;
 }
 
 nav p {
@@ -87,12 +89,6 @@ nav li {
     margin: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-}
-
-nav i {
-    color: #FF5500;
-    position: absolute;
-    right: 10px;
 }
 
 nav input {
@@ -116,10 +112,17 @@ header h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 36px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
 }
 
 header img {
     float: right;
+}
+
+header i {
+    color: #FF5500;
 }
 
 #trackgenix-info div{
@@ -210,12 +213,16 @@ footer {
     border-top: 1px solid #aaa;
 } 
 
-footer div {
+footer .col-info {
     width: 33%;
     margin: auto;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     padding: 20px;
+}
+
+footer .col-info {
+    padding: 90px;
 }
 
 footer #copyright {
