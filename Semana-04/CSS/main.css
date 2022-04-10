@@ -80,3 +80,63 @@
     margin: auto;
 }
 /* end functionalities section */
+
+/* start why trackgenix section */
+#why-trackgenix {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+.img-content3 {
+    width: 100%;
+    text-align: center;
+}
+
+.img-content3 img {
+    width: 330px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.list-content3 {
+    width: 100%;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.list-content3 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.list-content3 li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.list-content3 .button {
+    width: 110px;
+    background-color: #fff;
+    color: #FF5500;
+    border: 1px solid #FF5500;
+    border-radius: 5%;
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.list-content3 .button:hover {
+    background-color: #FF5500;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* end why trackgenix section */
