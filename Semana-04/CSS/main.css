@@ -38,3 +38,45 @@
 }
 
 /* end trackgenix info */
+
+/* start functionalities section */
+#functionalities {
+    width: 100%;
+    border-bottom: 2px solid #C4C4C4;
+    margin-top: 50px;
+}
+
+#functionalities h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+
+.func-content2 {
+    width: 100%;
+}
+
+.func-content2 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.func-content2 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.function {
+    width: 350px;
+    margin: auto;
+}
+/* end functionalities section */
