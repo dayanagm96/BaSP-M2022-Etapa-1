@@ -1,0 +1,40 @@
+/* start trackgenix inf section  */
+#trackgenix-info {
+    width: 100%;
+    margin-top: 50px;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+.img-content1 {
+    width: 100%;
+    text-align: center;
+}
+
+.img-content1 img {
+    width: 330px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.info-content1 {
+    width: 100%;
+    text-align: center;
+}
+
+.info-content1 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.info-content1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+/* end trackgenix info */
