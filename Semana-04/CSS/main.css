@@ -204,3 +204,54 @@
     }
 }
 /* end why trackgenix section */
+
+/* start help section */
+#help {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #C4C4C4;
+}
+
+.help-content4 {
+    margin: 20px 20px;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    text-align: left;
+}
+
+.help-content4 .form-group {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.form-group .fill, select, textarea {
+    padding: 8px;
+}
+
+.button-content4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-content4 .dif {
+    width: 170px;
+    height: 46px;
+    background-color: #ff5500;
+    color: #fff;
+}
+
+.button-content4 .dif:hover {
+    background-color: #fff;
+    color: #ff5500;
+    border: 1px solid #ff5500;
+}
+
+.button-content4 .btn {
+    width: 110px;
+    height: 46px;
+}
