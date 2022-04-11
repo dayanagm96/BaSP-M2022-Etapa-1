@@ -135,27 +135,34 @@
     border-bottom: 2px solid #C4C4C4;
 }
 
+.why-content3 {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .img-content3 {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
 }
 
 .img-content3 img {
     width: 330px;
     height: auto;
     border-radius: 5%;
+    align-self: center;
 }
 
 .list-content3 {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
     text-align: left;
     margin-left: 40px;
 }
 
 .list-content3 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
     margin-top: 20px;
 }
 
@@ -168,21 +175,32 @@
 
 .list-content3 .button {
     width: 110px;
-    background-color: #fff;
-    color: #FF5500;
-    border: 1px solid #FF5500;
-    border-radius: 5%;
-    padding: 10px 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     margin-top: 5px;
     margin-bottom: 30px;
 }
 
-.list-content3 .button:hover {
-    background-color: #FF5500;
-    color: #fff;
-    border: 1px solid #fff;
-}
+@media screen and (min-width: 1024px) {
+    .why-content3 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
+    .img-content3 {
+        margin: 10px 20px;
+        align-self: center;
+    }
+
+    .list-content3 {
+        margin: 10px 20px;
+        padding-left: 100px;
+    }
+    .list-content3 h2 {
+        margin-top: 0;
+    }
+
+    .img-content3 img {
+        width: 400px;
+        margin-bottom: 50px;
+    }
+}
 /* end why trackgenix section */
