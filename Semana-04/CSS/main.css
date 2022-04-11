@@ -30,9 +30,6 @@
 }
 
 .info-content1 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
     margin-top: 20px;
 }
 
@@ -74,29 +71,29 @@
 
 /* start functionalities section */
 #functionalities {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
     border-bottom: 2px solid #C4C4C4;
     margin-top: 50px;
 }
 
 #functionalities h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 30px;
 }
 
 .func-content2 {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
-.func-content2 h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 10px;
+.function {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .func-content2 p {
@@ -108,9 +105,25 @@
     line-height: 20px;
 }
 
-.function {
-    width: 350px;
-    margin: auto;
+@media screen and (min-width: 1024px) {
+    .func-content2 { 
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .func-content2 p {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .function {
+        display: flex;
+        flex-direction: row;
+        flex: 40%;
+        margin: 10px;
+        padding: 10px;
+    }
 }
 /* end functionalities section */
 
