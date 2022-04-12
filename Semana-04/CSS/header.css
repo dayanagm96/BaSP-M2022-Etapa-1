@@ -1,7 +1,9 @@
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px 40px;
+.company-name {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: left;
+    flex-direction: row-reverse;
+    align-items: center;
     border-bottom: 3px solid #FF5500;
 }
 
@@ -11,19 +13,7 @@
 }
 
 
-header {
-    width: 100%;
-}
-
-.flex-nav {
-    display: flex;
-    flex-direction: column;
-}
 
 
-.company-name {
-    display: flex;
-    justify-content: left;
-    flex-direction: row-reverse;
-    align-items: center;
-}
+
+
