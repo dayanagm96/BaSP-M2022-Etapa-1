@@ -1,5 +1,4 @@
 /* start trackgenix inf section  */
-
 #trackgenix-info {
     width: 100%;
     margin-top: 50px;
@@ -44,6 +43,14 @@
     padding: 20px;
 }
 
+/* tablet version */
+@media screen and (min-width: 768px) {
+    .img-content1 img {
+        width: 80%;
+    }
+}
+
+/* desktop version */
 @media screen and (min-width: 1024px) {
     #trackgenix-info {
         display: flex;
@@ -72,13 +79,10 @@
 
 }
 
-/* end trackgenix info */
-
 /* start functionalities section */
 #functionalities {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     border-bottom: 2px solid #C4C4C4;
     margin-top: 50px;
 }
@@ -106,14 +110,26 @@
 }
 
 .func-content2 p {
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 20px;
     line-height: 20px;
 }
 
+/* tablet version */
+@media screen and (min-width: 768px) {
+    .func-content2 p {
+        font-size: 16px;
+    }
+    .function i {
+        font-size: 50px;
+    }
+    .function {
+        margin-left: 20px;
+    }
+}
+
+/* desktop version */
 @media screen and (min-width: 1024px) {
     #functionalities {
         margin: 40px 10px 40px 10px;
@@ -140,7 +156,6 @@
         font-size: 40px;
     }
 }
-/* end functionalities section */
 
 /* start why trackgenix section */
 #why-trackgenix {
@@ -163,7 +178,7 @@
 }
 
 .img-content3 img {
-    width: 330px;
+    width: 90%;
     height: auto;
     border-radius: 5%;
     align-self: center;
@@ -194,10 +209,12 @@
     margin-bottom: 30px;
 }
 
+/* tablet and desktop version */
 @media screen and (min-width: 1024px) {
     .why-content3 {
         display: flex;
         flex-direction: row-reverse;
+        padding: 20px;
     }
 
     .img-content3 {
@@ -214,11 +231,10 @@
     }
 
     .img-content3 img {
-        width: 400px;
+        width: 100%;
         margin-bottom: 50px;
     }
 }
-/* end why trackgenix section */
 
 /* start help section */
 #help {
@@ -271,6 +287,25 @@
     height: 46px;
 }
 
+/* tablet and desktop version */
+@media screen and (min-width: 768px) {
+    .cont-fill {
+        display: flex;
+        flex-direction: row;
+    }
+    .cont-fill .fill {
+        margin-right: 10px;
+    }
+    .button-content4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .button-content4 .button {
+        margin-right: 50px;
+    }
+}
+
 /* start our history section */
 #history {
     display: flex;
@@ -284,7 +319,9 @@
     display: flex;
     flex-direction: column-reverse;
     padding: 10px;
+    align-self: center;
 }
+
 .history-img img {
     max-width: 350px;
     height: auto;
@@ -300,6 +337,14 @@
     padding: 15px;
 }
 
+/* tablet version */
+@media screen and (min-width: 768px) {
+    .history-img {
+        align-self: center;
+    }
+}
+
+/* desktop version */
 @media screen and (min-width: 1024px) {
     #history {
         display: flex;
@@ -326,4 +371,3 @@
     }
 }
 
-/* end our history section */
