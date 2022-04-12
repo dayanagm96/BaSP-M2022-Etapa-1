@@ -1,12 +1,22 @@
-#nav-links {
+nav {
     display: none;
     overflow: hidden; 
 }
 
+nav p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
 nav li {
+    font-size: 20px;
     list-style-type: none;
     margin: 10px 0;
     width: 8rem;
+}
+
+nav li a {
+    font-weight: 300;
 }
 
 @media screen and (min-width: 481px) {
@@ -22,7 +32,7 @@ nav li {
         justify-content: center;
     }
 
-    #nav-links {
+    nav {
         padding-top: 20px;
         display: flex;
         flex-direction: column;
