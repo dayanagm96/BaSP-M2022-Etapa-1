@@ -1,29 +1,29 @@
-/* start trackgenix inf section  */
-#trackgenix-info {
-    width: 100%;
-    margin-top: 50px;
-    border-bottom: 2px solid #C4C4C4;
+#trackgenix-info, #functionalities, #history {
     display: flex;
     flex-direction: column;
+}
+
+/* start trackgenix inf section  */
+#trackgenix-info {
+    margin-top: 50px;
+    border-bottom: 2px solid #C4C4C4;
     justify-content: center;
 }
 
 .img-content1 {
-    flex-basis: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
 .img-content1 img {
-    width: 330px;
+    width: 80%;
     height: auto;
     border-radius: 5%;
     align-self: center;
 }
 
 .info-content1 {
-    flex-basis: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,6 @@
 }
 
 .info-content1 p{
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-top: 20px;
@@ -43,24 +42,14 @@
     padding: 20px;
 }
 
-/* tablet version */
-@media screen and (min-width: 768px) {
-    .img-content1 img {
-        width: 80%;
-    }
-}
-
-/* desktop version */
+/* tablet and desktop version */
 @media screen and (min-width: 1024px) {
     #trackgenix-info {
-        display: flex;
         flex-direction: row-reverse;
         padding: 20px 0 20px 0;
         margin: 20px 0 20px 0;
     }
     .info-content1 {
-        display: flex;
-        flex-direction: column;
         flex-basis: 40%;
         text-align: left;
     }
@@ -70,19 +59,19 @@
     }
 
     .img-content1 {
-        display: flex;
         flex-direction: row-reverse;
         flex-basis: 40%;
         margin-bottom: 40px;
         margin-left: 20px;
     }
 
+    .img-content1 img {
+        width: 100%;
+    }
 }
 
 /* start functionalities section */
 #functionalities {
-    display: flex;
-    flex-direction: column;
     border-bottom: 2px solid #C4C4C4;
     margin-top: 50px;
 }
@@ -101,7 +90,6 @@
 
 .function {
     width: 350px;
-    margin: 10px;
     padding: 10px;
 }
 
@@ -109,7 +97,7 @@
     font-size: 30px;
 }
 
-.func-content2 p {
+.func-text p {
     font-size: 12px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -118,14 +106,16 @@
 
 /* tablet version */
 @media screen and (min-width: 768px) {
-    .func-content2 p {
-        font-size: 16px;
+    .function {
+        margin-left: 10px;
     }
+
     .function i {
         font-size: 50px;
     }
-    .function {
-        margin-left: 20px;
+
+    .func-text p {
+        font-size: 16px;
     }
 }
 
@@ -134,17 +124,13 @@
     #functionalities {
         margin: 40px 10px 40px 10px;
     }
+
     .func-content2 { 
         flex-basis: 100%;
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .func-content2 p {
-        font-size: 16px;
-        margin-left: 20px;
-    }
     .function {
         display: flex;
         flex-direction: row;
@@ -152,14 +138,22 @@
         margin: 10px;
         padding: 10px;
     }
-    #functionalities i {
+
+    .function i {
         font-size: 40px;
+    }
+    
+    .func-text {
+        margin-left: 10px;
+    }
+
+    .func-text p {
+        font-size: 16px;
     }
 }
 
 /* start why trackgenix section */
 #why-trackgenix {
-    width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
     border-bottom: 2px solid #C4C4C4;
@@ -212,7 +206,6 @@
 /* tablet and desktop version */
 @media screen and (min-width: 1024px) {
     .why-content3 {
-        display: flex;
         flex-direction: row-reverse;
         padding: 20px;
     }
@@ -222,23 +215,23 @@
         align-self: center;
     }
 
+    .img-content3 img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
     .list-content3 {
         margin: 10px 20px;
         padding-left: 20px;
     }
+
     .list-content3 h2 {
         margin-top: 0;
-    }
-
-    .img-content3 img {
-        width: 100%;
-        margin-bottom: 50px;
     }
 }
 
 /* start help section */
 #help {
-    width: 100%;
     margin-bottom: 20px;
     padding-bottom: 30px;
     border-bottom: 2px solid #C4C4C4;
@@ -307,29 +300,19 @@
 }
 
 /* start our history section */
-#history {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-}
-
 .history-img {
-    flex-basis: 100%;
-    text-align: center;
     display: flex;
     flex-direction: column-reverse;
     padding: 10px;
-    align-self: center;
+    align-items: center;
 }
 
 .history-img img {
-    max-width: 350px;
-    height: auto;
+    width: 90%;
     padding-bottom: 20px;
 }
 
 .history-info {
-    flex-basis: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -339,6 +322,10 @@
 
 /* tablet version */
 @media screen and (min-width: 768px) {
+    .history-info {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .history-img {
         align-self: center;
     }
@@ -347,15 +334,18 @@
 /* desktop version */
 @media screen and (min-width: 1024px) {
     #history {
-        display: flex;
         flex-direction: row;
         justify-content: center;
+        margin: 50px;
     }
 
     .history-img {
-        display: flex;
         flex-direction: column;
-        flex-basis: 40%;
+        flex-basis: 60%;
+    }
+
+    .history-img img {
+        width: 100%;
     }
 
     .history-img h2 {
@@ -363,9 +353,7 @@
     }
 
     .history-info {
-        display: flex;
         flex-direction: row;
-        text-align: left;
         flex-basis: 40%;
         padding-top: 70px;
     }
