@@ -18,3 +18,12 @@ On the landing page you can find some of the several characteristics of the syst
 - Section with the history of the company.
 - The last section contains some elements listed as: Products (Functionalities, Downloads, Integrations, Extras). Company (About Us, Clients, Resources, Blog). And Support (Help, Tutorials, API, Contact).
 - The footer contains the company's social media links and copyright.
+
+## Week 03
+In the second week of the landing page creation it was added the basic CSS values as font-sizes, font-family, basically reseting some of the general value. Also on this week we had to be using box sizing and the different elements to replicate the design without making it responsive.
+
+## Week 04
+The third week was the opposite, the styling of the landing page had to change to make it more responsive to the different devices (phones, tablets, and desktop) using flexbox, also we had to approach this task taking into consideration the mobile first concept. 
+
+## Week 05
+On week 5 all the corrections from the past few weeks had to be fixed while learning the basics of JavaScript as a tool for development.
