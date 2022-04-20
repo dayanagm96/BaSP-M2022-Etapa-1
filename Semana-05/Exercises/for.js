@@ -1,4 +1,5 @@
 // a and b
+console.log("Exertcise 5-a/b");
 var typesOfFood = [
     "italian",
     "chinese",
@@ -13,6 +14,7 @@ typesOfFood.forEach(function (element, index, array){
 })
 
 // c
+console.log("Exertcise 5-c");
 var sentence = " ";
 
 for (var i = 0; i < typesOfFood.length; i++) {
@@ -21,6 +23,7 @@ for (var i = 0; i < typesOfFood.length; i++) {
 alert(sentence);
 
 // d 
+console.log("Exertcise 5-d");
 
 var emptyArray = [];
 

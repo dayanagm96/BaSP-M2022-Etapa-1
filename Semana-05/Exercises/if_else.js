@@ -1,4 +1,5 @@
 // a
+console.log("Exercise 4-a");
 
 var randomNum = Math.random();
 
@@ -9,6 +10,8 @@ if (randomNum >= 0.5) {
 }
 
 // b
+console.log("Exercise 4-b");
+
 var age = 17;
 
 if (age < 2) {
