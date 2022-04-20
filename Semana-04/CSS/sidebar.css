@@ -29,13 +29,14 @@ nav li a {
         flex: 1;
         width: 20%;
         background-color: gray;
-        justify-content: center;
+        justify-content: left;
     }
 
     nav {
-        padding-top: 20px;
         display: flex;
         flex-direction: column;
+        padding-top: 20px;
+        margin-left: 20px;
     }
     main {
         width: 70%; 
