@@ -27,3 +27,6 @@ The third week was the opposite, the styling of the landing page had to change t
 
 ## Week 05
 On week 5 all the corrections from the past few weeks had to be fixed while learning the basics of JavaScript as a tool for development.
+
+## Week 06
+The sixth week of the project started with the creation of the Log In section with its own form to add the imputs for the email information and the password (each with their own set of validation), also the creation of the Employee Sign Up section with the proper form, within the form tag the information fields were added: name, last name, ID, date of birth, email, etc. JavaScript was used to show the functionality for both sections with their proper error messages in case it was needed. 
