@@ -1,0 +1,13 @@
+.company-name {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: left;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-bottom: 3px solid #FF5500;
+}
+
+#navToggle {
+    color: #FF5500;
+    cursor: pointer;
+}
