@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+#company-name {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 10px;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 3px solid #FF1717;
+}
+
+#company-name i{
+    color: #ff5500;
+}
+
+form {
+    width: 400px;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 10px;
+    height: 400px;
+    min-height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sign-up-form h2 {
+    font-weight: 300;
+}
+
+.sign-up-cont {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 30px;
+}
+
+.incorrect-data-message {
+    display: none;
+}
+
+.group-sign-up-text {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.group-sign-up-text .fields {
+    width: 100%;
+    border-style: none;
+    border-bottom: 1px solid black;
+}
+
+.group-sign-up {
+    width: 100%;
+    padding: 10px;
+}
+
+.continue-btn {
+    background-color: #ff5500;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #ff5500;
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #FF1717;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
