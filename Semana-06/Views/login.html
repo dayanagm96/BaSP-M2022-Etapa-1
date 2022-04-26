@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <script defer src="../JavaScript/login.js"></script>
     </head>
     <body>
         <header>
@@ -21,22 +22,20 @@
             </div>
         </header>
         <div class="sign-up-cont">
-                <form id="sign-up-form">
+                <form  action="/Views/index.html" id="sign-up-form">
                     <h2>
                         Sign In
                     </h2>
                     <div class="group">
-                        <div class="incorrect-data-message">
-                            <i class="material-icons">highlight_off</i>
-                            Incorrect email or password
-                        </div>
                         <div class="group-sign-up-text">
                             <i class="material-icons">email</i>
-                            <input type="text" class="fields" name="email" placeholder="Email">
+                            <input type="text" class="fields" name="email" id="email" placeholder="Email">
+                            <div class="error"></div>
                         </div>
                         <div class="group-sign-up-text">
                             <i class="material-icons">lock</i>
-                            <input type="password" class="fields" name="password" placeholder="Password">
+                            <input type="password" class="fields" name="password" id="password" placeholder="Password">
+                            <div class="error"></div>
                         </div> 
                         <div class="group-sign-up">
                             <input type="checkbox" class="rm-check" name="remember-me" id="remember-me">
@@ -70,6 +69,5 @@
                     </p>
                 </div>
         </footer>
-        <script src="../JavaScript/login.js"></script>
     </body>
 </html>
