@@ -26,86 +26,86 @@
             Edit Profile
         </h2>
         <div class="form-cont">
-            <form action="" id="form-input">
+            <form action="" id="form-input" novalidate>
                 <div class="form-group">
                     <label for="name">
                         Name
                     </label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="first name" id="name" onfocusout="validateFirstName()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="last-name">
                         Last Name
                     </label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last name" id="last-name" onfocusout="validateLastName()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="id-number">
                         ID Number
                     </label>
-                    <input type="text" name="id-number" id="id-number">
+                    <input type="text" name="id-number" id="id-number" onfocusout="validateIdNumber()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="date-birth">
                         Date of Birth
                     </label>
-                    <input type="date" name="date-birth" id="date-birth">
+                    <input type="date" name="date-birth" id="date-birth" onfocusout="validateDateBirth()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="phone-num">
                         Phone Number
                     </label>
-                    <input type="tel" name="phone-num" id="phone-num">
+                    <input type="tel" name="phone-num" id="phone-num" onfocusout="validatePhoneNumber()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="address">
                         Address
                     </label>
-                    <input type="text" name="address" id="address">
+                    <input type="text" name="address" id="address" onfocusout="validateAddress()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="location">
                         Location
                     </label>
-                    <input type="text" name="location" id="location">
+                    <input type="text" name="location" id="location" onfocusout="validateLocation()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="zip-code">
                         Zip Code
                     </label>
-                    <input type="text" name="zip" id="zip-code">
+                    <input type="text" name="zip" id="zip-code" onfocusout="validateZipCode()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="email">
                         Email
                     </label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" onfocusout="validateEmail()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="password">
                         Password
                     </label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" onfocusout="validatePassword()">
                     <span class="helper-text"></span>
                 </div>
                 <div class="form-group">
                     <label for="confirm-password">
                         Confirm Password
                     </label>
-                    <input type="password" name="con-pw" id="confirm-password">
+                    <input type="password" name="con-pw" id="confirm-password" onfocusout="validateConfirmPassword()">
                     <span class="helper-text"></span>
                 </div>
-                <button class="btn" type="submit">
-                    Save Changes
+                <button class="btn" type="submit" id="btn">
+                    Create
                 </button>
             </form>
         </div>
