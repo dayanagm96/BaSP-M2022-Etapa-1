@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log In</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/login.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- <script defer src="../javaScript/login.js"></script> -->
+    </head>
+    <body>
+        <header>
+            <div id="company-name">
+                <h1>Trackgenix SA</h1>
+                <i class="large material-icons" id="navToggle">format_align_justify</i>
+            </div>
+        </header>
+        <div class="sign-up-cont">
+                <form  action="../views/index.html" id="sign-up-form">
+                    <h2>
+                        Sign In
+                    </h2>
+                    <div class="group">
+                        <div class="group-sign-up-text">
+                            <i class="material-icons">email</i>
+                            <input type="text" class="fields" name="email" id="email" placeholder="Email">
+                            <div class="error"></div>
+                        </div>
+                        <div class="group-sign-up-text">
+                            <i class="material-icons">lock</i>
+                            <input type="password" class="fields" name="password" id="password" placeholder="Password">
+                            <div class="error"></div>
+                        </div> 
+                        <div class="group-sign-up">
+                            <input type="checkbox" class="rm-check" name="remember-me" id="remember-me">
+                            <label for="check">Remember me</label>
+                        </div>
+                        <div class="group-sign-up">
+                            <p class="forgot-q">
+                                <a href="#">
+                                   Forgot password?
+                                </a> 
+                            </p>
+                        </div>
+                    </div>
+                    <button class="continue-btn" id="continue-btn" type="submit">
+                        Continue
+                    </button>
+                </form>
+        </div>
+        <footer>
+            <div class="copyright">
+                <div class="social-media">
+                    <a href="http://www.facebook.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/facebook.png"/></a>
+                    <a href="http://www.instagram.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/></a>
+                    <a href="http://www.twitter.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/twitter-squared.png"/></a>
+                    <a href="http://www.linkedin.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/></a>
+                    <a href="http://www.github.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a>
+                </div>
+                <div class="rights">
+                    <p>
+                        Copyright &copy; 2022 Trackgenix. All rights reserved. 
+                    </p>
+                </div>
+        </footer>
+    </body>
+</html>

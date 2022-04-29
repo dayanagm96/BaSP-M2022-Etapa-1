@@ -1,0 +1,45 @@
+nav {
+    display: none;
+    overflow: hidden; 
+}
+
+nav p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav li {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 10px 0;
+    width: 8rem;
+}
+
+nav li a {
+    font-weight: 300;
+}
+
+@media screen and (min-width: 481px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+    }
+    aside {
+        display: flex;
+        flex: 1;
+        width: 20%;
+        background-color: gray;
+        justify-content: left;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+    main {
+        width: 70%; 
+        flex: 3;
+    }
+}
