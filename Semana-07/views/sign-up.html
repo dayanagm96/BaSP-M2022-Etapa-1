@@ -7,6 +7,7 @@
         <title>Sign Up</title>
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" href="../styles/sidebar.css">
         <link rel="stylesheet" href="../styles/sign-up.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,140 +15,142 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-        <!-- <script defer src="../javaScript/sign-up.js"></script> -->
+        <script defer src="../javaScript/sign-up.js"></script>
     </head>
     <body>
+        <header>
+            <div class="company-name">
+                <h1>Trackgenix S.A</h1>
+                <i class="large material-icons" id="navToggle">format_align_justify</i>
+            </div>
+        </header>
         <div class="main-container">
-            <header>
-                <div class="company-name">
-                    <h1>Trackgenix S.A</h1>
-                    <i class="large material-icons" id="navToggle">format_align_justify</i>
-                </div>
-            </header>
             <aside>
                 <nav>
                     <p>Menu</p>
                     <ul>
-                        <li><a href="#" target="blank">Home</a></li>
-                        <li><a href="#" target="blank">Edit Profile</a></li>
-                        <li><a href="#" target="blank">Timesheet</a></li>
-                        <li><a href="#" target="blank">My Projects</a></li>
-                        <li><a href="#" target="blank">Sign Out</a></li>
+                        <li><a href="../views/index.html" target="blank">Home</a><i class="material-icons">public</i></li>
+                        <li><a href="#" target="blank">Edit Profile</a><i class="material-icons">create</i></li>
+                        <li><a href="#" target="blank">Timesheet</a><i class="material-icons">query_builder</i></li>
+                        <li><a href="#" target="blank">Projects</a><i class="material-icons">flight</i></li>
+                        <li><a href="../views/login.html" target="blank">Sign Out</a><i class="material-icons">arrow_back</i></li>
                     </ul>
                 </nav>
             </aside>
-            <div class="profile-title">
-                <h2>
-                    Edit Profile
-                </h2>
-            </div>
-            <div class="user-img">
-                <img src="/assets/user.png" alt="">
-            </div>
-            <div class="form-container">
-                <div class="user-details">
+            <main>
+                <div class="user-img">
+                    <img src="/assets/user.png" alt="" style="width: 100px; height: 100px;">
+                </div>
+                <div class="profile-title">
+                    <h2>
+                        Edit Profile
+                    </h2>
+                </div>
+                <div class="form-container">
                     <form action="/views/sign-up.html" id="form-input">
-                        <div class="form-group">
-                            <label for="name">
-                                First Name
-                            </label>
-                            <input type="text" name="first name" id="name" onfocusout="validateFirstName()">
-                            <span class="helper-text"></span>
+                        <div class="user-details1">
+                            <div class="form-group">
+                                <label for="name">
+                                    First Name
+                                </label>
+                                <input type="text" name="first name" id="name" onfocusout="validateFirstName()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">
+                                    Last Name
+                                </label>
+                                <input type="text" name="last name" id="last-name" onfocusout="validateLastName()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="id-number">
+                                    ID Number
+                                </label>
+                                <input type="text" name="id-number" id="id-number" onfocusout="validateIdNumber()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="date-birth">
+                                    Date of Birth
+                                </label>
+                                <input type="date" name="date-birth" id="date-birth" onfocusout="validateDateBirth()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-num">
+                                    Phone Number
+                                </label>
+                                <input type="tel" name="phone-num" id="phone-num" onfocusout="validatePhoneNumber()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">
+                                    Address
+                                </label>
+                                <input type="text" name="address" id="address" onfocusout="validateAddress()">
+                                <span class="helper-text"></span>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="last-name">
-                                Last Name
-                            </label>
-                            <input type="text" name="last name" id="last-name" onfocusout="validateLastName()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="id-number">
-                                ID Number
-                            </label>
-                            <input type="text" name="id-number" id="id-number" onfocusout="validateIdNumber()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="date-birth">
-                                Date of Birth
-                            </label>
-                            <input type="date" name="date-birth" id="date-birth" onfocusout="validateDateBirth()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone-num">
-                                Phone Number
-                            </label>
-                            <input type="tel" name="phone-num" id="phone-num" onfocusout="validatePhoneNumber()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">
-                                Address
-                            </label>
-                            <input type="text" name="address" id="address" onfocusout="validateAddress()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="location">
-                                Location
-                            </label>
-                            <input type="text" name="location" id="location" onfocusout="validateLocation()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="zip-code">
-                                Zip Code
-                            </label>
-                            <input type="text" name="zip" id="zip-code" onfocusout="validateZipCode()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">
-                                Email
-                            </label>
-                            <input type="email" name="email" id="email" onfocusout="validateEmail()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">
-                                Password
-                            </label>
-                            <input type="password" name="password" id="password" onfocusout="validatePassword()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="confirm-password">
-                                Confirm Password
-                            </label>
-                            <input type="password" name="con-pw" id="con-pw" onfocusout="validateConfirmPassword()">
-                            <span class="helper-text"></span>
-                        </div>
-                        <div class="button">
+                        <div class="user-details2">
+                            <div class="form-group">
+                                <label for="location">
+                                    Location
+                                </label>
+                                <input type="text" name="location" id="location" onfocusout="validateLocation()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip-code">
+                                    Zip Code
+                                </label>
+                                <input type="text" name="zip" id="zip-code" onfocusout="validateZipCode()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email
+                                </label>
+                                <input type="email" name="email" id="email" onfocusout="validateEmail()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">
+                                    Password
+                                </label>
+                                <input type="password" name="password" id="password" onfocusout="validatePassword()">
+                                <span class="helper-text"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">
+                                    Confirm Password
+                                </label>
+                                <input type="password" name="con-pw" id="con-pw" onfocusout="validateConfirmPassword()">
+                                <span class="helper-text"></span>
+                            </div>
+                        </div>  
                             <button class="btn" type="submit" id="btn">
                                 Create
                             </button>
-                        </div>
                     </form>
                 </div>
-            </div>
-            <footer>
-                <div class="copyright">
-                    <div class="social-media">
-                        <a href="http://www.facebook.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/facebook.png"/></a>
-                        <a href="http://www.instagram.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/></a>
-                        <a href="http://www.twitter.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/twitter-squared.png"/></a>
-                        <a href="http://www.linkedin.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/></a>
-                        <a href="http://www.github.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a>
-                    </div>
-                    <div class="rights">
-                        <p>
-                            Copyright &copy; 2022 Trackgenix. All rights reserved. 
-                        </p>
-                    </div>
-                </div> 
-            </footer>
+            </main>
         </div>
+        <footer>
+            <div class="copyright">
+                <div class="social-media">
+                    <a href="http://www.facebook.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/facebook.png"/></a>
+                    <a href="http://www.instagram.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new--v1.png"/></a>
+                    <a href="http://www.twitter.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/twitter-squared.png"/></a>
+                    <a href="http://www.linkedin.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"/></a>
+                    <a href="http://www.github.com/trackgenix"><img src="https://img.icons8.com/material-outlined/24/000000/github.png"/></a>
+                </div>
+                <div class="rights">
+                    <p>
+                        Copyright &copy; 2022 Trackgenix. All rights reserved. 
+                    </p>
+                </div>
+            </div> 
+        </footer>
     </body>
 </html>

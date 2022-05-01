@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    padding-right: 5px;
+}
+
+nav li i {
+    color: #ff5500d2;
+    font-size: 6px;
+    bottom: 0;
+}
+
+main {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    margin: auto;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-title {
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.user-details1, .user-details2 {
+    margin: 20px;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.form-group {
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2- 20px);
+}
+
+input {
+    height: 35px;
+    width: 100%;
+}
+
+.user-img {
+    display: flex;
+    left: 300px;
+}
+
+.btn {
+    background-color: #ff5500;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ffff;
+    color: #ff5500;
+    border: 1px solid #ff5500;
+}
+
+
