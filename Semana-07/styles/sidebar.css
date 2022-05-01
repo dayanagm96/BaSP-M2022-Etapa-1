@@ -30,6 +30,7 @@ nav li a {
         width: 20%;
         background-color: gray;
         justify-content: left;
+        max-width: 200px;
     }
 
     nav {
