@@ -72,45 +72,73 @@ var validateInputs = () => {
         setSuccess(password);
     }
 };
+
 // button.addEventListener('click', sendData);
 // utility functions
 form.addEventListener('submit', function(e){
     var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
     e.preventDefault()
-    if(emailValue == false || email == '' || passwordValue == false || password == ''){
+    const emailValue = email.value;
+    const passwordValue = password.value;
+
+    if(email == '' && password == ''){
+
         fetch(url)
         .then(function(response) {
-            return response.json()
+            return response.json();
         })
-        .then(function(resp) {
+        .then(function(res) {
             alert('Please provide the correct data without empty fields');
         })
-        .catch(function(err){
-            console.log('ERROR')
+        .catch(function(err) {
+            console.log('ERROR');
         })
-    } else if(emailValue != 'rose@radiumrocket.com' || passwordValue !='basp2022') {
-        fetch(url)
-        .then(function(res) {
-            return res.json()
-        })
-        .then(function(res) {
-            alert('Email or password incorrect')
-        })  
-    } else {
-        fetch(url)
-        .then(function(response) {
-            return response.json()
-        })
-        .then (function(res){
-            alert('You have succesfully login!')
-        })
-        .catch(function(err){
-            console.log('ERROR')
-        })
-    }
+    };
+
+    if(emailValue != 'rose@radiumrocket.com' && passwordValue != 'basp2022') {
+            fetch(url)
+            .then(function(res) {
+                return res.json();
+            })
+            .then(function(res) {
+                alert('email or password incorrect');
+            })
+        };
 
 });
 
+
+
+     // console.log('funciona if');
+    //     fetch(url)
+    //     .then(function(response) {
+    //         return response.json()
+    //     })
+    //     .then(function(resp) {
+    //         alert('Please provide the correct data without empty fields');
+    //     })
+    //     .catch(function(err){
+    //         console.log('ERROR')
+    //     })
+    // } else if(emailValue != 'rose@radiumrocket.com' || passwordValue !='basp2022') {
+    //     fetch(url)
+    //     .then(function(res) {
+    //         return res.json()
+    //     })
+    //     .then(function(res) {
+    //         alert('Email or password incorrect')
+    //     })  
+    // } else {
+    //     fetch(url)
+    //     .then(function(response) {
+    //         return response.json()
+    //     })
+    //     .then (function(res){
+    //         alert('You have succesfully login!')
+    //     })
+    //     .catch(function(err){
+    //         console.log('ERROR')
+    //     })
 // const sendHttpRequest = (method, url, data) => {
 //     return fetch(url, {
 //         method: method,
