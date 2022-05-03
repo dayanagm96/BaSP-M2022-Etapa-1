@@ -71,8 +71,102 @@ var validateInputs = () => {
     } else {
         setSuccess(password);
     }
-
 };
+// button.addEventListener('click', sendData);
+// utility functions
+form.addEventListener('submit', function(e){
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+    e.preventDefault()
+    if(emailValue == false || email == '' || passwordValue == false || password == ''){
+        fetch(url)
+        .then(function(response) {
+            return response.json()
+        })
+        .then(function(resp) {
+            alert('Please provide the correct data without empty fields');
+        })
+        .catch(function(err){
+            console.log('ERROR')
+        })
+    } else if(emailValue != 'rose@radiumrocket.com' || passwordValue !='basp2022') {
+        fetch(url)
+        .then(function(res) {
+            return res.json()
+        })
+        .then(function(res) {
+            alert('Email or password incorrect')
+        })  
+    } else {
+        fetch(url)
+        .then(function(response) {
+            return response.json()
+        })
+        .then (function(res){
+            alert('You have succesfully login!')
+        })
+        .catch(function(err){
+            console.log('ERROR')
+        })
+    }
+
+});
+
+// const sendHttpRequest = (method, url, data) => {
+//     return fetch(url, {
+//         method: method,
+//         body: JSON.stringify(data),
+//         headers: data ? {'Content-type' : 'application/json'} : {}
+//     }).then(response => {
+//         if(response.status >= 400) {
+//             response.json().then(errResData => {
+//                 const error = new Error('Something went wrong!');
+//                 error.data = errResData;
+//                 throw error;
+//             });
+//         }
+//         return response.json();
+//     });
+// };
+
+// const getData = () => {
+//     sendHttpRequest('GET', 'https://basp-m2022-api-rest-server.herokuapp.com/login')
+//     .then(responseData => {
+//         console.log(responseData);
+//     });
+// };
+
+// const sendData = () => {
+//     sendHttpRequest('POST', 'https://basp-m2022-api-rest-server.herokuapp.com/login', {
+//         email: 'rose@radiumrocket.com',
+//         password: 'basp2022'
+//     }).then(responseData => {
+//         console.log(responseData);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     });
+// };
+
+
+
+// form.addEventListener('submit', function(e){
+//     e.preventDefault();
+
+//     const formData = new FormData(this);
+
+//     fetch('https://basp-m2022-api-rest-server.herokuapp.com/login', {
+//         method: 'post',
+//         body: formData
+//     }).then(function(response) {
+//         return response.json();
+//     }).then(function (json) {
+//         alert('success');
+//     }).catch(function (error) {
+//         alert.error('ERROR');
+//     })
+// })
+
+
 
 // var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
 // var params = new URLSearchParams(window.location.search);
