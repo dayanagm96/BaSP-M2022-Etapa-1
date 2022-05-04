@@ -403,9 +403,19 @@ form.addEventListener('submit', function (e) {
             `Zip Code: ${zipCode.value}` +
             `Email: ${email.value}` +
             `Password: ${password.value}`);
+            localStorage.setItem('name', firstName.value);
+            localStorage.setItem('lastName', lastName.value);
+            localStorage.setItem('Birthday', dateBirth.value);
+            localStorage.setItem('DNI', idNumber.value);
+            localStorage.setItem('phone', phoneNumber.value);
+            localStorage.setItem('address', address.value);
+            localStorage.setItem('city', userLocation.value);
+            localStorage.setItem('postal', zipCode.value);
+            localStorage.setItem('email', email.value);
+            localStorage.setItem('password', password.value);
+            localStorage.setItem('passwordRepeat', confirmPassword.value);
         }) .catch(function(err){
-            console.error(err);
-            alert(response.statustext);
+            console.log('error');
         })
     }
 });
