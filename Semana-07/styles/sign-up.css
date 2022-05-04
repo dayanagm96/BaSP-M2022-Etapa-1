@@ -56,8 +56,13 @@ form {
 }
 
 input {
-    height: 35px;
+    height: 25px;
     width: 100%;
+}
+
+span {
+    display: flex;
+    font-size: 10px;
 }
 
 .user-img {
